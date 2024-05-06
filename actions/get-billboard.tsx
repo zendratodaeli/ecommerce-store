@@ -8,7 +8,7 @@ const URL = `${process.env.NEXT_PUBLIC_API_URL}/billboards`;
 //   return res.data;
 // }
 
-const getBillboard = async (id: String): Promise<Billboard[]> => {
+const getBillboard = async (id: String): Promise<Billboard> => {
   const res = await fetch(`${URL}/${id}`)
   return res.json();
 }
